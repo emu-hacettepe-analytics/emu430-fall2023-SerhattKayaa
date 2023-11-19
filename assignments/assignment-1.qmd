@@ -2,17 +2,75 @@
 title: "Assignment 1"
 ---
 
-# Assignment 1
-
-```{r}
-1 + 1
-```
-
-My first assignment has two parts.
+My first assignment has three parts as a, b, c.
 
 ## (a)
+Brief summary about a video on R studio with a name [Save an Ocean of Time](https://www.youtube.com/watch?v=cX2DE1V8-tI&ab_channel=PositPBC)
+
+Danielle, as a researcher at the marine science company CMAR, shares the challenges of organizing a large amount of data from sensor arrays. She emphasizes that this process is lengthy and cumbersome with traditional methods but highlights significant time savings when automated through coding.
+
+Demonstrating the effectiveness of coding in detecting and correcting errors in the dataset, Danielle provides examples. Addressing errors in latitude and longitude data, she mentions how coding allows for the pre-detection of such errors. Furthermore, she explains how coding improved data reliability by detecting and correcting errors caused by incorrect files in the dataset.
+
+Highlighting that coding provides a traceable and reproducible workflow, Danielle asserts that it is more reliable than traditional copy-paste methods. Drawing from her experiences, she acknowledges the learning curve of coding but emphasizes its long-term benefits and applicability to other projects.
+
+Lastly, Danielle recounts how a previously skeptical manager became supportive after understanding the benefits of coding, even creating an "R" emblem. Encouraging participants to engage in coding for automating repetitive tasks, she emphasizes the time-saving, error-reducing, and workflow-improving aspects of the process.
 
 ## (b)
+**1) Syntax:**
+
+R uses the assignment operator <- to assign values to variables.
+# R Syntax
+x <- 5
+
+Python uses the equal sign = for variable assignment.
+# Python Syntax
+x = 5
+
+**2) Data Structures**
+
+R: Lists are commonly used for holding different data types.
+
+#R Lists
+my_list <- list(1, "hello", TRUE)
+
+Python: Lists and dictionaries are versatile data structures for holding various types of data.
+
+#Python Lists and Dictionaries
+my_list = [1, "hello", True]
+my_dict = {"key": "value", "number": 42}
+
+**3) Data Manipulation**
+
+R: R has a variety of built-in functions for data manipulation, and the dplyr package is often used for data wrangling.
+
+**#R Data Manipulation with dplyr**
+
+library(dplyr)
+
+#Create a data frame
+data <- data.frame(Name = c("Alice", "Bob", "Charlie"),
+                   Age = c(25, 30, 22))
+                   
+#Filter data
+filtered_data <- data %>%
+  filter(Age > 25)
+
+Python: Python's pandas library is widely used for data manipulation, providing DataFrame structures and functions.
+
+**#Python Data Manipulation with pandas**
+
+import pandas as pd
+
+#Create a DataFrame
+data = pd.DataFrame({'Name': ['Alice', 'Bob', 'Charlie'],
+                     'Age': [25, 30, 22],})
+
+#Filter data
+filtered_data = data[data['Age'] > 25]
+
+
+## (c)
+
 ```{r}
 library(dslabs)
 data(na_example)
