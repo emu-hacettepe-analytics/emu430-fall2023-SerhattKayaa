@@ -13,3 +13,22 @@ My first assignment has two parts.
 ## (a)
 
 ## (b)
+```{r}
+library(dslabs)
+data(na_example)
+print("Original na_example Data:")
+print(na_example)
+print("NA Values:")
+print(is.na(na_example))
+total_na_original <- sum(is.na(na_example))
+print(paste("Total NA Values in Original Data:", total_na_original))
+na_example_no_na <- na_example
+na_example_no_na[is.na(na_example_no_na)] <- 0
+print("Modified na_example Data:")
+print(na_example_no_na)
+print("NA Values in Modified Data:")
+print(is.na(na_example_no_na))
+total_na_modified <- sum(is.na(na_example_no_na))
+print(paste("Total NA Values in Modified Data:", total_na_modified))
+
+```
